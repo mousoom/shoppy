@@ -1,0 +1,121 @@
+.navbar{
+    background-color: #131921;
+    display:flex;
+    align-items: center;
+    padding-top: 5px; 
+    padding-bottom: 5px;
+    width:100%;
+    z-index: 80;
+    position: sticky;
+    top:0;
+    justify-content: space-between;
+    border-radius: 0px 0px 10px 10px;
+}
+.navbar_logo{
+    width: 100px;
+    object-fit: contain;
+    margin-top: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* header search */
+.navbar_search{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.navbar_searchList{
+    background-color: #DDD;
+    height: 34px;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px; 
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.navbar_searchList p{
+    padding-left: 5px;
+}
+.navbar_searchList:hover{
+    background-color: #AAA;
+}
+.navbar_searchBox{
+    height:14px;
+    padding: 10px;
+    border:none;
+    width: 50%;
+}
+.navbar_searchBox:focus{
+    outline: none;
+}
+.navbar_searchIcon{
+    border-radius: 0 5px 5px 0;
+    padding: 6px;
+    height: 22px !important;
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.header_nav{
+    display:flex;
+    justify-content: space-evenly;  
+}
+.header_link{
+    text-decoration: none;
+    color: #EEE;
+    display: flex;
+}
+.header_option{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    line-height: 18px;
+    cursor: pointer;
+}
+.header_option:hover .icon{
+    color: orangered;
+  }
+.header_optionLine1{
+    color:#CCC;
+    font-size: 15px;
+}
+.header_optionLine2{
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    color:#EEE;
+}
+.header_optionLine2 .icon{
+    color:#CCC;
+}
+/* Header Cart */
+.header_Cart{
+    display:flex;
+    align-items: center; 
+    cursor: pointer; 
+}
+.header_Cart .cart_Name{
+    margin-right: 30px;
+    margin-left: 10px;
+}
+.header_cartCount{
+    position: absolute;
+    right: 62px;
+    top:24px;
+    color:#eee;
+    background-color:#232F3E;
+    border:3px solid #eee;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

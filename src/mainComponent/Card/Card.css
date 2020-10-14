@@ -1,0 +1,108 @@
+.container{
+	display: flex;
+	justify-content: space-around;
+	width:95%;
+	
+	
+}
+.card {
+	width: 270px;
+	height: 360px;
+	border-radius: 10px;
+	padding: 1rem;
+	background:white;
+	position: relative;
+	display: flex;
+	align-items: center;
+	transition: 0.4s ease-out;
+	flex-direction: column;
+}
+
+.card:hover {
+	transform: translateY(5px);
+}
+
+.card:hover:before {
+	opacity: 1;
+}
+
+.card:hover .info {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+.card:before {
+	content: "";
+	position: absolute;
+    bottom: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 18%;
+	border-radius: 0px 0px 10px 10px;
+	background: rgba(0,0,0,0.6);
+	z-index: 2;
+	transition: 0.5s;
+	opacity: 0;
+}
+.card .title{
+	font-size: 25px;
+	font-weight: 700;
+	font-family: sans-serif;
+	position: absolute;
+	top:13px;
+	left:15px;
+
+}
+
+.card img {
+	width: 100%;
+	height: 85%;
+	object-fit: cover;
+	border-radius: 10px;
+	position:absolute;
+	bottom:10px;
+}
+
+.card .info {
+    position: absolute;
+	bottom:20px;
+	left:30%;
+	z-index: 3;
+	opacity: 0;
+	transform: translateY(15px);
+	transition: 0.5s;
+
+}
+
+.btn {
+	margin: 0px;
+	outline: none;
+	border: none;
+	padding: 12px 20px;
+	font-size: 14px;
+	font-weight: bold;
+	position: relative;
+	background-color: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.btn::before {
+	transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	content: '';
+	width: 53%;
+	height: 100%;
+	background:black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 5px;
+}
+.btn .btn-text {
+	color:white;
+	mix-blend-mode: difference;
+}
+.btn:hover::before {
+	background: black;
+	width: 100%;
+}
